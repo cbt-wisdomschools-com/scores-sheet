@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="fav_icon2.ico">
-    <title>cbt.wisdomschools.org</title>
+    <title>portal.wisdomfoundationschools.org</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         /* {
@@ -29,7 +29,7 @@
                 left: 0;
                 width: 100%;
                 height: 100%;
-                background: url('img/templogo1.jpg') no-repeat center center;
+                background: url('img/mainlogo.png') no-repeat center center;
                 background-size: 300px 300px; /* adjust as needed*/ 
                 opacity: 0.1; /* watermark transparency */
                 z-index: 0;
@@ -52,7 +52,7 @@
             --background-color: #f5f5f5;
             --text-color: #333;
             --card-bg: white;
-            --header-bg: #008000;
+            --header-bg: gold;
             --header-text: white;
             --nav-bg: #006400;
             --input-border: #ddd;
@@ -94,7 +94,7 @@
        
         /* Navigation Bar */
         nav {
-            background-color: var(--nav-bg);
+            background-color: gold; /*var(--nav-bg);*/
             padding: 15px 0;
             margin-bottom: 25px;
             border-radius: 8px;
@@ -301,7 +301,7 @@
         }
     </style>
 </head>
-<body>
+<body oncontextmenu="return false;">
     <nav>
         <div class="nav-container">
             <ul class="nav-links">
@@ -324,10 +324,10 @@
         <header>
             <div class="logo-container">
                 <!--<div class="logo"><img id="student-image" src="img/templogo.jpg" alt="Profile Picture"></div>-->
-                <div><img src="img/templogo1.jpg" alt="Profile Picture"></div>
+                <div><img src="img/mainlogo.png" alt="Profile Picture"></div>
                
             </div>
-            <p>2025/2026 FIRST TERM COMPUTER BASED TEST EXAMINATION</p>
+            <p> WISDOM FOUNDATION SCHOOLS STUDENTS ACADEMIC RECORDS  SHEET PORTAL </p>
         </header>
        
     
@@ -344,7 +344,7 @@
 
              <div class="exam-sections">
             <div class="exam-section">
-                <div class="section-header">WISDOM  COLLEGE JUNIOR SECONDARY</div>
+                <div class="section-header">WISDOM FOUNDATION SCHOOLS JUNIOR SECONDARY</div>
                 <div class="section-body">
                 <p class="instructions"><span style="visibility: hidden; color: red;">----------------------------------------</span>JUNIOR CATEGORY </p>
                    
@@ -357,7 +357,7 @@
             </div>
 
               <div class="exam-section">
-                <div class="section-header">WISDOM  COLLEGE SENIOR SECONDARY □</div>
+                <div class="section-header">WISDOM FOUNDATION SCHOOLS SENIOR SECONDARY □</div>
                 <div class="section-body">
                     <p class="instructions"  color: red;><span style="visibility: hidden;">--------------------------------------</span>SENIOR CATEGORY </p>
                    
@@ -370,7 +370,7 @@
         </div>
        
         <div class="windows-activate">
-           <p>&copy; cbt.wisdomschools.org. All rights reserved.</p>
+           <p>&copy; portal.wisdomFoundationschools.org. All rights reserved.</p>
         </div>
     </div>
            
@@ -389,7 +389,7 @@ document.getElementById('userImage').src = sessionStorage.getItem('image');
 function checkInput1() {
     if(document.getElementById('input1').value === 'junior') {
         sessionStorage.setItem('userType', 'junior');
-        window.location.href = 'index_junior.html';
+        window.location.href = 'index_juniors.html';
     } else {
         alert('Incorrect input for Junior');
     }
@@ -398,7 +398,7 @@ function checkInput1() {
 function checkInput2() {
     if(document.getElementById('input2').value === 'senior') {
         sessionStorage.setItem('userType', 'senior');
-        window.location.href = 'index_senior.html';
+        window.location.href = 'index_seniors.html';
     } else {
         alert('Incorrect input for Senior');
     }
